@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+<h1>Новости</h1>
+<hr>
+{% for n in news %}
+<u>Категория: <i>{{ n.category_id }}</i> Дата публикации: <i>{{ n.date }}</i></u>
+    <h2> {{ n.title }} </h2>
+    <p>{{ n.content }}</p>
+{% endfor %}
+</body>
+</html>
