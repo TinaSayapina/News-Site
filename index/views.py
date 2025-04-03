@@ -17,7 +17,7 @@ def home_page(request):
     items = list(News.objects.all())
 
     # change 3 to how many random items you want
-    random_items = random.sample(items, 3)
+    random_items = random.sample(items, 1)
     # if you want only a single random item
     random_item = random.choice(items)
 
